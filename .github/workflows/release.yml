@@ -1,0 +1,11 @@
+name: merge --ff
+on:
+  pull_request_review:
+    types: [submitted, edited]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log line
+        run: echo "console.log()"
